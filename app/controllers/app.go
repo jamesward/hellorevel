@@ -1,14 +1,14 @@
 package controllers
 
 import (
-    "github.com/robfig/revel"
+	"github.com/robfig/revel"
 )
 
 type Application struct {
-    *rev.Controller
+	*rev.Controller
 }
 
 func (c Application) Index() rev.Result {
-    message := "hello, Revel"
-    return c.Render(message)
+	message := "hello, Revel"
+	return c.Render(message)
 }
